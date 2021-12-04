@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Passinho do Romano</title>
+</head>
+<body>
+  <div id="container">
+    <h1>Passinho do Romano</h1>
+    <form>
+      <div id="mensagemdiv">
+        <label for="mensagem">Escreva sua mensagem</label><br>
+        <input type="text" name="mensagem" id="text-input" placeholder="Digite sua mensagem">
+      </div>
+
+      <div id="tipodiv">
+        <label>Selecione o tipo de decodificação</label><br>
+        <select name="decodificacao" id="decodificacao">
+          <option value="">Escolha sua cifra</option>
+          <option value="cifraCesar">Cifra de César</option>
+          <option value="base64">Base64</option>
+        </select>
+      </div>
+
+      <div id="incrementodiv">
+        <label>Escolha o incremento a ser utilizado na cifra</label><br>
+        <input type="range"  min='1' max="25" id="incremento" value="1" >
+        <textarea name="rangevalue" id="rangevalue" cols="1" rows="1" placeholder="1"   readonly></textarea>
+      </div>
+
+      <div id="escolhadiv">
+        <label>Escolha o que fazer:</label>
+        <label for="codificar">Codificar</label>
+        <input type="radio" name="radio" id="codificar" value="codificar" checked>
+        <label for="decodificar">Decodificar</label>
+        <input type="radio" name="radio" id="decodificar" value="decodificar">
+        
+      </div>
+
+      
+
+      <input type="submit" value="Codificar" id="button">
+
+      <div id="resultadodiv">
+        <label for="resultado">Sua mensagem criptografada:</label>
+        <textarea name="resultado" id="resultado" cols="60" rows="10"></textarea>
+      </div>
+    </form>
+  </div>
+
+
+  <script src="./main.js"></script>
+</body>
+</html>
+
+
+
