@@ -9,11 +9,12 @@
 </head>
 <body>
   <div id="container">
-    <h1>Passinho do Romano</h1>
+    
     <form>
+      <h1>Encriptador de mensagens</h1>
       <div id="mensagemdiv">
-        <label for="mensagem">Escreva sua mensagem</label><br>
-        <input type="text" name="mensagem" id="text-input" placeholder="Digite sua mensagem">
+        <label for="mensagem">Digite sua mensagem</label><br>
+        <textarea name="mensagem" id="text-input" placeholder="Digite sua mensagem aqui!" ></textarea>
       </div>
 
       <div id="tipodiv">
@@ -26,16 +27,16 @@
       </div>
 
       <div id="incrementodiv">
-        <label>Escolha o incremento a ser utilizado na cifra</label><br>
+        <label>Escolha a cifra a ser utilizada</label><br>
         <input type="range"  min='1' max="25" id="incremento" value="1" >
         <textarea name="rangevalue" id="rangevalue" cols="1" rows="1" placeholder="1"   readonly></textarea>
       </div>
 
       <div id="escolhadiv">
-        <label>Escolha o que fazer:</label>
-        <label for="codificar">Codificar</label>
-        <input type="radio" name="radio" id="codificar" value="codificar" checked>
-        <label for="decodificar">Decodificar</label>
+        <label>Escolha o que fazer</label><br>
+        <label for="codificar">Codificar</label><br>
+        <input type="radio" name="radio" id="codificar" value="codificar" checked><br>
+        <label for="decodificar">Decodificar</label><br>
         <input type="radio" name="radio" id="decodificar" value="decodificar">
         
       </div>
@@ -45,8 +46,8 @@
       <input type="submit" value="Codificar" id="button">
 
       <div id="resultadodiv">
-        <label for="resultado">Sua mensagem criptografada:</label>
-        <textarea name="resultado" id="resultado" cols="60" rows="10"></textarea>
+        <label for="resultado">Sua mensagem criptografada</label><br>
+        <textarea name="resultado" id="resultado" readonly></textarea>
       </div>
     </form>
   </div>
@@ -55,6 +56,7 @@
   <script src="./main.js"></script>
 </body>
 </html>
+
 
 
 

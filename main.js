@@ -87,6 +87,18 @@ function decodificaCesar() {
   return textoCodificadoCesar
 }
 
+function codificaBase64() {
+  var textCode = document.querySelector('#text-input').value
+  var binario = btoa(textCode)
+  return binario
+}
+
+function decodificaBase64() {
+  var textCode = document.querySelector('#text-input').value
+  var binario = atob(textCode)
+  return binario
+}
+
 function resultado(e) {
   e.preventDefault()
 
@@ -94,5 +106,9 @@ function resultado(e) {
     document.querySelector('#resultado').value = codificaCesar()
   } else if (cifra.value == 'cifraCesar' && decodificar.checked) {
     document.querySelector('#resultado').value = decodificaCesar()
+  } else if (cifra.value == 'base64' && codificar.checked) {
+    document.querySelector('#resultado').value = codificaBase64()
+  } else {
+    document.querySelector('#resultado').value = decodificaBase64()
   }
 }
