@@ -39,13 +39,13 @@ function valorIncremento() {
 
 function buttonTextCod() {
   if (codificar.checked) {
-    btn.value = 'Codificar'
+    btn.value = 'Codificar Mensagem!'
   }
 }
 
 function buttonTextDeCod() {
   if (decodificar.checked) {
-    btn.value = 'Decodificar'
+    btn.value = 'Decodificar Mensagem!'
   }
 }
 
